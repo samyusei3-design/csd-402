@@ -1,10 +1,10 @@
 /*
 Samuel Guizar
 10/29/26
-Module 2 Assignement
+Module 2 Assignment
 */
 
-//This program is a Rock paper Scissors game
+//This program is a Rock Paper Scissors game
 
 import java.util.Random;
 import java.util.Scanner;
@@ -18,15 +18,15 @@ public class GuizarModule2CSD402 {
             int computerChoice = random.nextInt(3) + 1;
 
             //Display game instructions
-            System.out.println("Rock-Paper-Scissors");
-            System.out.println("1 = Rock");
-            System.out.println("2 = Paper");
-            System.out.println("3 = Scissors");
+            System.out.println("Rock Paper Scissors Game");
+            System.out.println("Enter 1 for Rock");
+            System.out.println("Enter 2 for Paper");
+            System.out.println("Enter 3 for Scissors");
 
             int userChoice;
 
             //Get user input
-            System.out.print("Enter your choice (1, 2, or 3): ");
+            System.out.print("1, 2, or 3? : ");
 
             if (input.hasNextInt()) {
                 userChoice = input.nextInt();
@@ -78,15 +78,15 @@ public class GuizarModule2CSD402 {
 
             //Determine the winner
             if (userChoice == computerChoice) {
-                System.out.println("Result: It's a tie!");
+                System.out.println("It's a tie!");
             } else if (
                 (userChoice == 1 && computerChoice == 3) ||
                 (userChoice == 2 && computerChoice == 1) ||
                 (userChoice == 3 && computerChoice == 2)
             ) {
-                System.out.println("Result: You win!");
+                System.out.println("You win!");
             } else {
-                System.out.println("Result: The computer wins!");
+                System.out.println("The computer wins!");
             }
         }
     }
